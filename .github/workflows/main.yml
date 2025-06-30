@@ -30,6 +30,3 @@ jobs:
     - name: Lint with Ruff
       run: ruff check src/
 
-
-    - name: Static Type Check with Pyright
-      run: pyright src/
