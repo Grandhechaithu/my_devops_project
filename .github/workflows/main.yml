@@ -30,3 +30,12 @@ jobs:
     - name: Lint with Ruff
       run: ruff check src/
 
+    - name: Start App on Port 3000
+      run: |
+        nohup python src/main.py &
+        sleep 5  # give the server time to start
+
+    - name: Check if server is running
+      run: curl http://localhost:3000
+
+
