@@ -6,4 +6,4 @@ COPY . /app
 RUN pip install -r requirements.txt
 
 CMD ["python", "src/main.py"]
-EXPOSE 3000
+EXPOSE 8000
